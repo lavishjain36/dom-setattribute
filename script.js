@@ -1,10 +1,29 @@
-var xhr = new XMLHttpRequest();
-xhr.open("GET", "https://restcountries.eu/rest/v2/all");
-xhr.onload = function () {
-  var t = JSON.parse(this.response);
-  console.log(t);
+var obj = {
+  name: "lavish",
+  email: "lavish@guvi.in",
 };
-xhr.onerror = function () {
-  console.log("Error", this.statusText);
+
+//Array of objects=>value
+var a = [
+  {
+    name: "lavish",
+    email: "lavish@guvi.in",
+  },
+  {
+    name: "lavish",
+    email: "lavish@guvi.in",
+  },
+];
+
+//Object of object=>Key(index) and value
+
+var x = {
+  1: {
+    name: "lavish",
+    email: "lavish@guvi.in",
+  },
+  2: {
+    name: "lavish",
+    email: "lavish@guvi.in",
+  },
 };
-xhr.send();
