@@ -1,20 +1,26 @@
-const obj = [
-  {
-    brand: "apple",
-    model: "ios",
-  },
+// // Add Local storage
 
-  {
-    brand: "dell",
-    model: "inspiron",
-  },
-];
+// // key and value
+// localStorage.name = "Lavish";
+// localStorage.address = "Chennai";
+// localStorage.company = "Guvi";
+// localStorage.contact = "12345";
+// // localStorage.removeItem("name");
 
-// for (i = 0; i < obj.length; i++) {
-//   console.log(obj);
-// }
-obj.forEach((vimal) => {
-  for (var key in vimal) {
-    console.log(key, vimal[key]);
-  }
-});
+// localStorage.getItem("company");
+// localStorage.clear();
+
+// Add a session storage
+
+sessionStorage.name = "Lavish";
+sessionStorage.addresss = "Chennai";
+sessionStorage.company = "Guvi";
+
+//To check a session storage
+
+// sessionStorage.name;
+
+//remove session storaage
+
+sessionStorage.removeItem("address");
+// HTML=>local storage and Session storage
