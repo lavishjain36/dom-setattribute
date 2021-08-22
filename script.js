@@ -1,20 +1,23 @@
-document.body.style.fontFamily = "Times New Roman, Times, serif";
-document.getElementById("adhar").innerHTML = "XXXXX";
-document.getElementById("name").innerHTML = "Lavish";
-document.getElementById("age").innerHTML = "10";
-document.getElementById("email").innerHTML = "XXXXX";
-document.getElementById("company").innerHTML = "XYZ COmapny";
-document.getElementById("contact").innerHTML = "12345";
+//use the set attributs navbar to topnavigation
 
-var element = document.getElementsByTagName("li");
+var parent = document.getElementById("navBar");
+parent.setAttribute("id", "topnavigation");
 
-// Iterate through each li and change the class to "listitem".
-for (let i = 0; i < element.length; i++) {
-  element[i].className = "listitem";
-}
-//create a new image element and set it to image source url and append the image element to your page
-var imgelement = document.createElement("img");
-imgelement.src =
-  "https://tse2.mm.bing.net/th?id=OIP.RGlqtc5PUWkELfoDzc8dLQHaHQ&pid=Api&P=0&w=189&h=186";
+//2point
+var element = document.createElement("li");
+var textnode = document.createTextNode("Technology We use");
+//append
 
-document.body.appendChild(imgelement);
+element.appendChild(textnode);
+
+parent.firstElementChild.appendChild(element);
+
+var ul = document.getElementById("topnavigation").firstElementChild;
+
+//get the hold of first and last child under ul
+
+let first = ul.firstElementChild;
+let last = ul.lastElementChild;
+
+document.write(first.firstChild.firstChild.nodeValue + "<br>");
+document.write(last.firstChild.nodeValue + "<br>");
