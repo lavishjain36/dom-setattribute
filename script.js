@@ -1,26 +1,20 @@
-// // Add Local storage
+document.body.style.fontFamily = "Times New Roman, Times, serif";
+document.getElementById("adhar").innerHTML = "XXXXX";
+document.getElementById("name").innerHTML = "Lavish";
+document.getElementById("age").innerHTML = "10";
+document.getElementById("email").innerHTML = "XXXXX";
+document.getElementById("company").innerHTML = "XYZ COmapny";
+document.getElementById("contact").innerHTML = "12345";
 
-// // key and value
-// localStorage.name = "Lavish";
-// localStorage.address = "Chennai";
-// localStorage.company = "Guvi";
-// localStorage.contact = "12345";
-// // localStorage.removeItem("name");
+var element = document.getElementsByTagName("li");
 
-// localStorage.getItem("company");
-// localStorage.clear();
+// Iterate through each li and change the class to "listitem".
+for (let i = 0; i < element.length; i++) {
+  element[i].className = "listitem";
+}
+//create a new image element and set it to image source url and append the image element to your page
+var imgelement = document.createElement("img");
+imgelement.src =
+  "https://tse2.mm.bing.net/th?id=OIP.RGlqtc5PUWkELfoDzc8dLQHaHQ&pid=Api&P=0&w=189&h=186";
 
-// Add a session storage
-
-sessionStorage.name = "Lavish";
-sessionStorage.addresss = "Chennai";
-sessionStorage.company = "Guvi";
-
-//To check a session storage
-
-// sessionStorage.name;
-
-//remove session storaage
-
-sessionStorage.removeItem("address");
-// HTML=>local storage and Session storage
+document.body.appendChild(imgelement);
